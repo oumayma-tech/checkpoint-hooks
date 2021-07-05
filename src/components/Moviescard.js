@@ -1,6 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Card} from 'react-bootstrap'
+import {Card,Button} from 'react-bootstrap'
+import ReactStars from "react-rating-stars-component";
+import {Link} from 'react-router-dom';
+
+
+
  function Moviescard(props){
+
      return(
   <div className="movie">
   <Card>
@@ -14,9 +20,18 @@ import {Card} from 'react-bootstrap'
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-      <small className="text-muted">{props.el.rating}</small>
+    <ReactStars
+    count={5}
+    value={props.el.rating}
+    size={24}
+    activeColor="#ffd700"
+  />
     </Card.Footer>
+    {/* <div>
+    <Link to={'/movie/'+props.el.id}>Movie details </Link> {' '}
+    </div> */}
   </Card>
+  
   </div>
 
      )

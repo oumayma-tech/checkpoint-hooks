@@ -75,4 +75,8 @@
   list-style: none;
   display:flex;
 }
+.upp{
+  display: flex;
+  flex-direction: column;
+}
 

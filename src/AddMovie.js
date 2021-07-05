@@ -16,13 +16,14 @@ function Example({HandleAdd}) {
         <Button variant="primary" onClick={handleShow}>
           Add Movie
         </Button>
-  
+ 
         <Modal show={show} onHide={handleClose}>
           <Modal.Header closeButton>
             <Modal.Title>Add Movies</Modal.Title>
           </Modal.Header>
           <Modal.Body > 
-            <div>
+
+            <div className="upp">
     <label>Title:</label><input type="text" value={title} onChange={(e)=>settitle(e.target.value)}/>
  <label>Description:</label><input type="text" value={description} onChange={(e)=>setdescription(e.target.value)}/>
  <label>PosterUrl:</label><input type="text" value={posterURL} onChange={(e)=>setposterURL(e.target.value)}/>
