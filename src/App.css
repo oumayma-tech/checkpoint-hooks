@@ -79,4 +79,10 @@
   display: flex;
   flex-direction: column;
 }
+.button:hover{
+  background-color: darkcyan;
+}
+.button{
+  color:blue;
+}
 

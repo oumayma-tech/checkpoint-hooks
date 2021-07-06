@@ -27,9 +27,9 @@ import {Link} from 'react-router-dom';
     activeColor="#ffd700"
   />
     </Card.Footer>
-    {/* <div>
+    <div>
     <Link to={'/movie/'+props.el.id}>Movie details </Link> {' '}
-    </div> */}
+    </div>
   </Card>
   
   </div>
